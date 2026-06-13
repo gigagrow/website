@@ -85,7 +85,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto lg:mx-0"
+                className="text-gray-300 leading-relaxed max-w-3xl mx-auto lg:mx-0 text-base"
               >
                 At GigaGrowth Web Solutions, we create stunning, high-performance websites that drive real business results. From custom web design and e-commerce platforms to digital marketing and SEO, we build digital solutions that grow your revenue.
               </motion.p>
