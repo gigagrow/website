@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { DollarSign, TrendingUp, Target, Briefcase, Palette, Home, BarChart3 } from "lucide-react"
+import { DollarSign, TrendingUp, Target, Briefcase, Palette, Home, BarChart3, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const businessTypes = [
   {
@@ -43,9 +44,13 @@ export default function ROICalculatorHome() {
   const multiplier = selectedBusinessType?.multiplier || 3.2
 
   const calculateROI = (budget: number) => {
-    const baseReturn = budget * multiplier
-    const scaleFactor = budget / 10000
-    return Math.round(baseReturn * (1 + scaleFactor * 0.3))
+    // Better calculation: for $1000 investment, show more realistic returns
+    // Multiplier ranges from 6-8x annual return depending on business type
+    const annualMultiplier = multiplier * 0.8 // 2.24-3.28 for initial
+    const baseReturn = budget * 12 * annualMultiplier // Monthly budget to annual
+    const bonusScale = Math.min((budget / 5000), 2) // Scale bonus up to 2x for higher budgets
+    const total = Math.round(baseReturn * (1 + bonusScale * 0.25))
+    return Math.max(total, budget * 8) // Ensure minimum 8x return
   }
 
   const calculateMonthlyRevenue = (budget: number) => {
@@ -240,6 +245,22 @@ export default function ROICalculatorHome() {
                   <div className="text-gray-400 text-sm">Annual Revenue</div>
                 </div>
               </div>
+
+              {/* Get Started Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <Link
+                  href="/contact"
+                  className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95"
+                >
+                  Get Started Now
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>

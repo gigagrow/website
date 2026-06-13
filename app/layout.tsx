@@ -4,6 +4,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import SmoothScroll from "@/components/smooth-scroll"
 import PageLoader from "@/components/page-loader"
+import ScrollToTop from "@/components/scroll-to-top"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
+        <ScrollToTop />
         <PageLoader />
         <SmoothScroll>{children}</SmoothScroll>
       </body>

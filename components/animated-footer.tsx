@@ -209,13 +209,13 @@ export default function AnimatedFooter() {
               © {new Date().getFullYear()} GigaGrowth Web Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <Link href="#" className="text-gray-500 hover:text-white transition-colors">
+              <Link href="/privacy-policy" className="text-gray-500 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-white transition-colors">
+              <Link href="/terms-of-service" className="text-gray-500 hover:text-white transition-colors">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-white transition-colors">
+              <Link href="/cookie-policy" className="text-gray-500 hover:text-white transition-colors">
                 Cookie Policy
               </Link>
             </div>
