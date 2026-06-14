@@ -1,4 +1,5 @@
 import GlowButton from "./glow-button"
+import Link from "next/link"
 
 export default function CTA() {
   return (
@@ -14,9 +15,11 @@ export default function CTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <GlowButton size="lg" className="px-8 py-4 text-lg">
-            Start Your Transformation
-          </GlowButton>
+          <Link href="/get-started">
+            <GlowButton size="lg" className="px-8 py-4 text-lg">
+              Start Your Transformation
+            </GlowButton>
+          </Link>
           <button className="text-white hover:text-blue-400 transition-colors font-medium">
             Schedule Free Consultation
           </button>

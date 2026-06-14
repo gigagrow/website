@@ -167,8 +167,8 @@ export default function AboutUs() {
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               Let's discuss how GigaGrowth can help you achieve your digital goals and accelerate your business growth.
             </p>
-            <Link href="/contact">
-              <AnimatedButton size="lg" className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
+            <Link href="/get-started">
+              <AnimatedButton size="lg" className="bg-white text-black hover:bg-gray-100">
                 Start Your Project
               </AnimatedButton>
             </Link>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Star, Quote } from "lucide-react"
 import GlowButton from "./glow-button"
 
@@ -202,10 +203,12 @@ export default function SuccessStories() {
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
             Let's create a marketing strategy that delivers real results for your business.
           </p>
-          <GlowButton size="lg" className="px-10 py-6 text-lg bg-white text-black hover:bg-gray-100">
-            Start Your Journey
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </GlowButton>
+          <Link href="/get-started">
+            <GlowButton size="lg" className="px-10 py-6 text-lg bg-white text-black hover:bg-gray-100">
+              Start Your Journey
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </GlowButton>
+          </Link>
         </motion.div>
       </div>
     </section>

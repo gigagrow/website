@@ -95,9 +95,9 @@ export default function PortfolioDetail({ project }: { project: any }) {
             </div>
 
             {/* CTA */}
-            <Link href="/contact" className="block">
+            <Link href="/get-started" className="block">
               <AnimatedButton size="lg" className="w-full bg-white text-black hover:bg-gray-100">
-                Start Your Project
+                Get Started
               </AnimatedButton>
             </Link>
           </motion.div>

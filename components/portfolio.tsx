@@ -248,11 +248,11 @@ export default function Portfolio() {
           <p className="text-gray-400 max-w-2xl mx-auto mb-6">
             Let's work together to create something amazing for your business
           </p>
-          <a href="/contact">
+          <Link href="/get-started">
             <AnimatedButton size="lg" className="bg-white text-black hover:bg-gray-100">
               Get Started Today
             </AnimatedButton>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

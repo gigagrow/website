@@ -58,7 +58,7 @@ const events: TimelineEvent[] = [
 ]
 
 export default function EnhancedTimeline() {
-  const { ref, inView } = useInView({ threshold: 0.1, once: true })
+  const { ref, inView } = useInView({ threshold: 0.1, once: false })
 
   return (
     <div className="w-full py-24">

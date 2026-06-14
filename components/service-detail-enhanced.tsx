@@ -55,9 +55,11 @@ export default function ServiceDetailEnhanced({
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">{title}</h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">{description}</p>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Get Started
-              </button>
+              <Link href="/get-started">
+                <button className="bg-white text-black hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+                  Get Started
+                </button>
+              </Link>
             </div>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -151,9 +153,11 @@ export default function ServiceDetailEnhanced({
           <p className="text-xl text-blue-100 mb-8">
             Let's discuss how we can help your business succeed with {title.toLowerCase()}
           </p>
-          <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-            Schedule a Consultation
-          </button>
+          <Link href="/get-started">
+            <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+              Get Started Now
+            </button>
+          </Link>
         </div>
       </section>
     </div>

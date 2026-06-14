@@ -183,12 +183,12 @@ export default function AnimatedFooter() {
               </div>
 
               <div className="mt-8">
-                <Link href="/inquiry">
+                <Link href="/get-started">
                   <AnimatedButton
                     className="w-full bg-white text-black hover:bg-gray-100"
                     gradient="radial-gradient(circle, rgba(59,130,246,0.2) 0%, rgba(37,99,235,0.1) 50%, rgba(29,78,216,0) 100%)"
                   >
-                    Start Your Project
+                    Get Started
                   </AnimatedButton>
                 </Link>
               </div>

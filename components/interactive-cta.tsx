@@ -104,10 +104,12 @@ export default function InteractiveCTA() {
                 whileTap={{ scale: 0.95 }}
                 className="flex flex-col sm:flex-row gap-6 justify-center items-center"
               >
-                <GlowButton size="lg" className="px-10 py-6 text-lg">
-                  Start Your Transformation
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </GlowButton>
+                <Link href="/get-started">
+                  <GlowButton size="lg" className="px-10 py-6 text-lg">
+                    Start Your Transformation
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </GlowButton>
+                </Link>
                 <motion.button
                   whileHover={{ x: 5 }}
                   className="text-gray-400 hover:text-white transition-colors font-medium flex items-center"
