@@ -11,8 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "GigaGrowth Web Solutions - Custom Web & Digital Marketing",
   description:
-    "GigaGrowth Web Solutions provides tailored web design, app development, and digital marketing services to boost your online presence and drive revenue.",
-    generator: 'v0.app'
+    "GigaGrowth Web Solutions provides tailored web design, app development, and digital marketing services to boost your online presence and drive revenue."
 }
 
 export default function RootLayout({
